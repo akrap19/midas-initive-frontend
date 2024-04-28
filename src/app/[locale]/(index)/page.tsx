@@ -1,11 +1,12 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 import { Button } from '@/components/inputs/button'
 import { Box } from '@/components/layout/box'
 import { Inline } from '@/components/layout/inline'
 import { Stack } from '@/components/layout/stack'
 import { Text } from '@/components/typography/text'
-import { useTranslations } from 'next-intl'
 
 const HomePage = async () => {
 	const t = useTranslations()
@@ -30,7 +31,7 @@ const HomePage = async () => {
 								</Text>
 							</Box>
 							<Box width="100%">
-								<Button size="xlarge" href={'/'}>
+								<Button size="xlarge" href="/">
 									{t('General.tradeToken')}
 								</Button>
 							</Box>

@@ -7,13 +7,12 @@ import { Button } from '@/components/inputs/button'
 import { Box } from '@/components/layout/box'
 import { Inline } from '@/components/layout/inline'
 import { Text } from '@/components/typography/text'
-import { Pagination } from 'api/models/common/pagination'
 
 import { dataTablePaginationContainer } from './DataTable.css'
 
 type DataTablePaginationProps = {
 	table: Table<any>
-	pagination: Pagination
+	pagination: any
 }
 
 export const DataTablePagination = ({ table, pagination }: DataTablePaginationProps) => {

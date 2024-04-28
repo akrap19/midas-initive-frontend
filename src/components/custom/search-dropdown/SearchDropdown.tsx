@@ -15,13 +15,12 @@ import { endIconSpacing, input, inputHasSuccess } from '@/components/inputs/inpu
 import { Box } from '@/components/layout/box'
 import { Stack } from '@/components/layout/stack'
 import { Text } from '@/components/typography/text'
-import { Base } from 'api/models/common/base'
 
 import {
+	DropdownPresentationlabel,
 	dropdownListContainer,
 	dropdownListItem,
-	dropdownListItemsContainer,
-	DropdownPresentationlabel
+	dropdownListItemsContainer
 } from './SearchDropdown.css'
 import CarretDownIcon from '../../icons/block-icon/assets/carret-down-icon.svg'
 import CarretUpIcon from '../../icons/block-icon/assets/carret-up-icon.svg'
@@ -29,7 +28,7 @@ import { SearchInput } from '../inputs/search-input'
 import { NoResult } from '../no-result'
 
 interface Props {
-	options: Base[]
+	options: any[]
 	placeholder: string
 	name?: string
 	hasSuccess?: boolean
@@ -78,7 +77,7 @@ export const SearchDropdown = ({
 
 	const debouncedFilterChange = useDebounce(handleFilterChange, 300)
 
-	const handleDropdownOption = (e: React.MouseEvent<HTMLButtonElement>, option: Base) => {
+	const handleDropdownOption = (e: React.MouseEvent<HTMLButtonElement>, option: any) => {
 		e.preventDefault()
 
 		if (name) {

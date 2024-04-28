@@ -16,7 +16,6 @@ import { Table } from '@/components/data-display/table/Table'
 import { useTable } from '@/hooks/use-table'
 import { useTableStore } from '@/store/table'
 import { getObjectLength } from '@/utils/getObjectLength'
-import { Pagination } from 'api/models/common/pagination'
 
 import { DataTableBody } from './DataTableBody'
 import { DataTableHeader } from './DataTableHeader'
@@ -25,7 +24,7 @@ import { DataTablePagination } from './DataTablePagination'
 interface Props<TData, TValue> {
 	columns: ColumnDef<TData, TValue>[]
 	data: TData[]
-	pagination: Pagination
+	pagination: any
 }
 
 export const DataTable = <TData, TValue>({ columns, data, pagination }: Props<TData, TValue>) => {

@@ -1,33 +1,23 @@
 'use client'
 
-import { usePathname, useRouter } from 'next/navigation'
-import { useState } from 'react'
-
 import { Box } from '@/components/layout/box'
 import { Stack } from '@/components/layout/stack'
 
-import { Item, drawerItems } from './Data'
 import { drawer } from './Drawer.css'
-import { DrawerItem } from './DrawerItem'
 import { BrandLogo } from '../brand-logo/BrandLogo'
 
-interface Props {
-	role: string
-}
+export const Drawer = () => {
+	// const [isOpen, setIsOpen] = useState(false)
+	// const pathname = usePathname()
+	// const { push } = useRouter()
 
-export const Drawer = ({ role }: Props) => {
-	const [isOpen, setIsOpen] = useState(false)
-	const pathname = usePathname()
-	const { push } = useRouter()
-	const filtredDrawerItems: Item[] = drawerItems.filter((item: Item) => item.usedByRoles?.includes(role))
-
-	const handleOpen = (route?: string) => {
-		if (route && !pathname.includes(route)) {
-			push(route)
-		} else if (!route) {
-			setIsOpen(!isOpen)
-		}
-	}
+	// const handleOpen = (route?: string) => {
+	// 	if (route && !pathname.includes(route)) {
+	// 		push(route)
+	// 	} else if (!route) {
+	// 		setIsOpen(!isOpen)
+	// 	}
+	// }
 
 	return (
 		<Box className={drawer}>
@@ -35,7 +25,7 @@ export const Drawer = ({ role }: Props) => {
 				<Box paddingLeft={6}>
 					<BrandLogo addHomeLink />
 				</Box>
-				<Stack gap={4}>
+				{/* <Stack gap={4}>
 					{filtredDrawerItems.map(item => (
 						<>
 							<DrawerItem item={item} isOpen={isOpen} handleOpen={handleOpen} />
@@ -46,7 +36,7 @@ export const Drawer = ({ role }: Props) => {
 								))}
 						</>
 					))}
-				</Stack>
+				</Stack> */}
 			</Stack>
 		</Box>
 	)

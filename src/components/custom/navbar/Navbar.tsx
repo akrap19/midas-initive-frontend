@@ -1,14 +1,15 @@
 'use client'
 
+import { useTranslations } from 'next-intl'
+
 import { Button } from '@/components/inputs/button'
 import { Box } from '@/components/layout/box'
 import { Inline } from '@/components/layout/inline'
 import { Text } from '@/components/typography/text'
-import { useTranslations } from 'next-intl'
-import { BrandLogo } from '../brand-logo/BrandLogo'
-import { navbarData } from './data'
 
+import { navbarData } from './data'
 import * as styles from './Navbar.css'
+import { BrandLogo } from '../brand-logo/BrandLogo'
 
 export const Navbar = () => {
 	const t = useTranslations()

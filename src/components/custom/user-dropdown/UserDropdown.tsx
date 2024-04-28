@@ -14,7 +14,6 @@ import { Inline } from '@/components/layout/inline'
 import { Stack } from '@/components/layout/stack'
 import { Text } from '@/components/typography/text'
 import { handleFullName } from '@/utils/handleFullName'
-import { logout } from 'api/services/auth'
 import { ROUTES } from 'parameters'
 
 import { dropdownListContainer, dropdownListItem } from './UserDropdown.css'
@@ -38,11 +37,7 @@ export const UserDropdown = ({ session }: Props) => {
 	const { push } = useRouter()
 
 	const handleLogout = async () => {
-		const result = await logout()
-
-		if (result?.message === 'OK') {
-			signOut({ callbackUrl: ROUTES.LOGIN })
-		}
+		signOut({ callbackUrl: ROUTES.LOGIN })
 	}
 
 	const options: Option[] = [

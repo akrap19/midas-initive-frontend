@@ -1,7 +1,7 @@
 import { style } from '@vanilla-extract/css'
+import { RecipeVariants, recipe } from '@vanilla-extract/recipes'
 
 import { tokens } from '@/style/theme.css'
-import { recipe, RecipeVariants } from '@vanilla-extract/recipes'
 
 export const DropdownPresentationlabel = recipe({
 	base: {
