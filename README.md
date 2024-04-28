@@ -1,11 +1,8 @@
-# Barnahus Journeys - Dashboard
-
 ### Overview:
+
 Barnahus: Child-Friendly Justice and Support System
 
 Barnahus is a unique and innovative approach to child protection and justice, primarily employed in Europe but inspired by the Children's Advocacy Centers in the US. Unlike the misconception that Barnahus is a place where children stay, it functions as a child-friendly office, bringing together various agencies under one roof to address the needs of abused or traumatized children. These agencies include law enforcement, criminal justice, child protective services, and medical and mental health professionals who collaboratively assess the child's situation and determine the appropriate course of action.
-
-
 
 ## Installation
 
@@ -65,6 +62,3 @@ This starter template includes configuration files for ESLint, Prettier and Husk
 
 - [Development Process](./docs/development_process.md)
 - [Pull Request Naming](./docs/pull_request_naming.md)
-# midas-initive-frontend
-# midas-initive-frontend
-# midas-initive-frontend
