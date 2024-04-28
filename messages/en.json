@@ -1,0 +1,13 @@
+{
+	"General": {
+		"news": "News",
+		"partnerships": "Partnerships",
+		"documentation": "Documentation",
+		"contact": "Contact",
+		"about": "About",
+		"mainPageBigText": "Veliki tekst, tu bi se mogao napisati nekakav citat za introduction na stranicu.",
+		"mainPageSubText": "Nisi est sit amet facilisis magna etiam tempor. Tellus molestie nunc non blandit massa. Sed pulvinar proin gravida hendrerit lectus.",
+		"tradeToken": "Trade token",
+		"cryptoTradingRevolution": "Join the revolution of Crypto trading."
+	}
+}
