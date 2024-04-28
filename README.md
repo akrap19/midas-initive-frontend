@@ -67,3 +67,4 @@ This starter template includes configuration files for ESLint, Prettier and Husk
 - [Pull Request Naming](./docs/pull_request_naming.md)
 # midas-initive-frontend
 # midas-initive-frontend
+# midas-initive-frontend
